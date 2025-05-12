@@ -118,7 +118,18 @@
 }
 
 @media (max-width: 768px){
-
+.sectionMain{
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-height: none;
+        gap: 20px;
+}
+    .divService{
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {

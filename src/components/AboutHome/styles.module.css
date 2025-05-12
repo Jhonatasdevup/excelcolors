@@ -156,6 +156,10 @@
 }
 
 @media (max-width: 768px) {
+  .imageContainer{
+    display: none;
+  }
+
   .section {
     padding: 4rem 1.5rem;
   }

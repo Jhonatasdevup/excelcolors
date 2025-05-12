@@ -100,11 +100,13 @@ export default function Navbar() {
         open={menuOpen}
         onClose={closeMenu}
         sx={{
-          
+          '& .MuiDrawer-paper': {
             backgroundColor: '#F26C28',
             width: '75%',
             maxWidth: '300px',
-          
+            height: '100%',
+            boxSizing: 'border-box'
+          }
         }}
         transitionDuration={300}
       >
@@ -145,8 +147,12 @@ export default function Navbar() {
         {isMobile ? renderMobileMenu() : renderDesktopMenu()}
       </nav>
 
+      {/* Espaçador para a navbar fixa */}
+      <div style={{ height: '60px' }}></div>
+
       <div className={styles.backgroundImage} style={{
-        backgroundImage: `url(/banners${pathname === '/' ? '/home.png' : pathname + '.png'})`
+        backgroundImage: `url(/banners${pathname === '/' ? '/home.png' : pathname + '.png'})`,
+        marginTop: '-60px' // Compensa o espaçador para o background image
       }}>
         {dataMenu.map((item, index) => (
           <div key={index}>
