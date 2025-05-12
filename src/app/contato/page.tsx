@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png", // substitua pelo URL real do logo
+        url: "/ExcelColors.png", // substitua pelo URL real do logo
         width: 800,
         height: 600,
         alt: "Excel Colors"
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "Fale Conosco | Excel Colors",
     description: "Entre em contato com nosso atendimento especializado preenchendo o formulário.",
     site: "", // substitua com o Twitter real se tiver
-    images: ["/"]
+    images: ["/ExcelColors.png"]
   },
   category: "Serviços",
 };

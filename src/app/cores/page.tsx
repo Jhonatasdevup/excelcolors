@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tabela de Cores RAL | Códigos e Nomes Oficiais',
     description: 'Visualize a lista completa das cores RAL com seus respectivos nomes, códigos e representação visual.',
-    images: ["https://excelcolors.com.br/images/servicos-capa.jpg"],
+    images: ["/ExcelColors.png"],
   },
   robots: 'index, follow',
 };

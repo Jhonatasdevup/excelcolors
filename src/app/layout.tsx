@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://excelcolors.com.br/images/capa-site.jpg", // substitua pelo caminho real da imagem
+        url: "/ExcelColors.png", // substitua pelo caminho real da imagem
         width: 1200,
         height: 630,
         alt: "Excel Colors - Pintura Eletrostática e Jateamento",
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     title: "Excel Colors | Pintura Eletrostática e Jateamento",
     description:
       "Transformamos peças metálicas com acabamento profissional, proteção duradoura e compromisso com prazos. Conheça a Excel Colors!",
-    images: ["https://excelcolors.com.br/images/capa-site.jpg"], // mesma imagem do Open Graph
-    creator: "@excelcolors",
+    images: ["/ExcelColors.png"], // mesma imagem do Open Graph
+    creator: "",
   },
   robots: {
     index: true,

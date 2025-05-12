@@ -12,7 +12,7 @@ export default function Footer() {
     {
       icon: <WhatsAppIcon sx={{fontSize: 35, color:'rgb(203, 203, 203)'}}/>,
       title: "WhatsApp",
-      data: "(12) 9 9999-9999",
+      data: "(12) 9 8251-0000",
       link: "https://wa.me/5512982510000"
     },
     {
