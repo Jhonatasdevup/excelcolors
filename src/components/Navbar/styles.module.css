@@ -1,0 +1,162 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  min-width: 320px;
+  width: 100%;
+}
+
+/* Menu Desktop */
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  gap: 4vw;
+  background-color: #F26C28;
+  padding: 0 20px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.menu.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu li {
+  list-style: none;
+  padding: 4px 0;
+  transition: all 0.2s;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.menu li:hover {
+  color: #2C3C9E;
+  transform: translateY(-2px);
+}
+
+.linkOn {
+  border-bottom: 2px solid #2C3C9E;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 12px;
+}
+
+/* Menu Mobile */
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #F26C28;
+  padding: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.mobileHeader.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menuButton {
+  color: white !important;
+}
+
+.closeButton {
+  color: white !important;
+  align-self: flex-end;
+  margin: 10px !important;
+}
+
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.mobileMenu li {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.mobileLink {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.mobileLink:hover {
+  color: #2C3C9E;
+}
+
+.mobileLinkOn {
+  border-left: 4px solid #2C3C9E;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Background Image */
+.backgroundImage {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.h1Background {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .menu {
+    gap: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  
+  .h1Background {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1Background {
+    font-size: 1.5rem;
+  }
+  
+  .backgroundImage {
+    height: 150px;
+  }
+}

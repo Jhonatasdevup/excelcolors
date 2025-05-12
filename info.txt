@@ -1,0 +1,5 @@
+Laranja forte	#F26C28	
+Roxo vibrante	#8A1F89	
+Azul escuro	#2C3C9E
+Amarelo ouro	#FFC627	
+Cinza escuro	#2B2B2B	

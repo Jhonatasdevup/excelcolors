@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.excelcolors.com
+
+# Sitemaps
+Sitemap: https://www.excelcolors.com/sitemap.xml

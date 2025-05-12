@@ -1,0 +1,93 @@
+.ctaContainer {
+    
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 100%;
+
+}
+
+.contentWrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.textContent {
+  text-align: center;
+  max-width: 42rem;
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #2C3C9E;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 1.125rem;
+  color: #5f6368;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+background: linear-gradient(135deg, #F26C28 0%, #8A1F89 100%) !important;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+}
+
+.ctaButton:hover {
+  transform: translateX(2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #f8fafc;
+}
+
+.arrowIcon {
+  margin-left: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem; 
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .contentWrapper {
+    padding: 3rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .textContent {
+    text-align: left;
+  }
+  
+  .heading {
+    font-size: 2.25rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .contentWrapper {
+    padding: 4rem 2rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,52 @@
+.divMain {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #282bf24e; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Para posicionar o pseudo-elemento */
+
+    transition: transform 0.3s ease;
+}
+
+.divMain:hover{
+    transform: translateY(-8px);
+}
+
+
+.divMain::before {
+    content: '';
+    position: absolute;
+    top: 5;
+    left: 5;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #f26b2874; 
+    clip-path: inset(100% 0 0 0); 
+    transition: clip-path 0.5s ease; 
+    z-index: 1; 
+    
+}
+
+/* Animação ao passar o mouse (desce) */
+.divMain:hover::before {
+    clip-path: inset(0 0 0 0); /* Revela a borda nova */
+    
+}
+
+/* Animação ao sair do mouse (sobe) */
+.divMain:not(:hover)::before {
+    transition: clip-path 0.5s ease;
+}
+
+.divMain p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: rgb(47, 47, 47);
+}

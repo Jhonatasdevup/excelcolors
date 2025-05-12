@@ -1,0 +1,51 @@
+.divMain{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.divMain h4 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: italic;
+    color: #292828;
+}
+
+.divColorsAll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.divBoxColor{
+    width: 164px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.divInfoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000007d;
+    padding-top: 10px;
+    width: 150px;
+    max-height: 150px;
+}
+.divInfoBox p{
+    color: white;
+    text-align: center;
+}
